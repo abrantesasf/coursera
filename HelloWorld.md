@@ -2,6 +2,7 @@
 
 If you would like to get to know me better:
 
+- My [personal website](http://abrantesfilho.com)
 - You can visit my [LinkedIn profile](https://www.linkedin.com/in/abrantes-filho) (sorry, only in Portuguese)
 - If you prefer, you can see my [profile on Kaggle](https://www.kaggle.com/abrantesasf)
 - My [public code repositories](https://github.com/abrantesasf) are in GitHub
