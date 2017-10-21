@@ -7,6 +7,7 @@ If you would like to get to know me better:
 - If you prefer, you can see my [profile on Kaggle](https://www.kaggle.com/abrantesasf)
 - My [public code repositories](https://github.com/abrantesasf) are in GitHub
 - Some work in R are in my [RPubs profile](https://rpubs.com/abrantesasf)
+- My [figshare account](https://figshare.com/authors/Abrantes_Ara_jo_Silva_Filho/4527598)
 - You can visit my Academic Rèsumè in [Currículo Lattes](http://lattes.cnpq.br/1741993179407695) (sorry, only in Portuguese)
 
 Thanks for visiting my GitHub public repositories!
