@@ -1,0 +1,133 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.640
+Okay people, now it's time to get serious.
+
+2
+00:00:03.640 --> 00:00:05.960
+Let's have a show of hands here.
+
+3
+00:00:05.960 --> 00:00:12.700
+Who here thinks that he or she is an absolute expert on sensors and actuators?
+
+4
+00:00:12.700 --> 00:00:16.545
+I don't see any hands up, but that's good.
+
+5
+00:00:16.545 --> 00:00:19.365
+Because if there were experts in the audience,
+
+6
+00:00:19.365 --> 00:00:24.035
+I would wonder why you are wasting your time on a Coursera class.
+
+7
+00:00:24.035 --> 00:00:28.725
+In course one of our specialization on embedding sensors and actuators,
+
+8
+00:00:28.725 --> 00:00:31.750
+we will take a deep dive into temperature sensors.
+
+9
+00:00:31.750 --> 00:00:34.025
+The granddaddy of all sensors.
+
+10
+00:00:34.025 --> 00:00:37.134
+Its history dates back to the 18th century
+
+11
+00:00:37.134 --> 00:00:40.555
+when guys named Fahrenheit and Celsius were around.
+
+12
+00:00:40.555 --> 00:00:45.385
+We will get you started with your piece of development kit both hardware and software.
+
+13
+00:00:45.385 --> 00:00:48.150
+There will be a few labs for you to do on schematics,
+
+14
+00:00:48.150 --> 00:00:51.725
+amplifiers, wiring, and adding sensors to the kit.
+
+15
+00:00:51.725 --> 00:00:53.965
+Then, we'll explain rotary sensors.
+
+16
+00:00:53.965 --> 00:00:56.555
+You'll do some lab work with those sensors.
+
+17
+00:00:56.555 --> 00:00:59.625
+Last, will tackle amplifiers,
+
+18
+00:00:59.625 --> 00:01:02.695
+circuit diagrams, derivation of grade equations,
+
+19
+00:01:02.695 --> 00:01:04.615
+noise issues and spec sheets.
+
+20
+00:01:04.615 --> 00:01:08.995
+You need expertise on amplifiers to work with sensors because there's
+
+21
+00:01:08.995 --> 00:01:13.620
+no such thing as a sensor circuit that doesn't have an amplifier.
+
+22
+00:01:13.620 --> 00:01:17.400
+My partner Jim and I believe that online education should be just as
+
+23
+00:01:17.400 --> 00:01:22.065
+rigorous as attending an upper class or graduate level engineering class in person.
+
+24
+00:01:22.065 --> 00:01:28.060
+Learning about sensors and actuators requires in-depth study of analog electronics.
+
+25
+00:01:28.060 --> 00:01:34.215
+Please review material you learned on this subject if you are having trouble keeping up.
+
+26
+00:01:34.215 --> 00:01:36.960
+Every module will have reading assignments which you can
+
+27
+00:01:36.960 --> 00:01:40.675
+download from the URL's listed in the class information.
+
+28
+00:01:40.675 --> 00:01:45.945
+There will be lab assignments for you to perform and online quizzes for you to take.
+
+29
+00:01:45.945 --> 00:01:48.445
+In module one of course one,
+
+30
+00:01:48.445 --> 00:01:52.530
+we will give you a high level overview of sensors and actuators as well
+
+31
+00:01:52.530 --> 00:01:57.425
+as the analog and digital interfaces that connect them to a digital circuit.
+
+32
+00:01:57.425 --> 00:02:02.470
+Then, we will review the principles of operation and circuits for Thermocouples.
+
+33
+00:02:02.470 --> 00:02:05.470
+RTD's and Thermistors.

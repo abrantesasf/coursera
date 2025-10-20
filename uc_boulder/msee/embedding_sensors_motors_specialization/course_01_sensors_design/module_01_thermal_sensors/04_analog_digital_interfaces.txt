@@ -1,0 +1,38 @@
+Most things we want to
+measure, for example, temperature or pressure,
+are continuously varying. The sensor data must
+be converted to a digital format
+before it can be interpreted by a microprocessor. Applying power to a
+sensor so that it produces a usable output
+is called excitation. Analog circuitry excites filters and amplifies the
+raw sensor signal, a process called
+signal conditioning. Once processed in this way, the signal is sent to an ADC, short for analog-to-digital
+converter. The output of the
+ADC is typically 8, 12, 16, or 24 bits. Data from an ADC is usually
+converted to a serial format, such as I2C, SPI or RS-232. Certain sensors,
+humidity in particular, incorporate the analog front end on a single chip solution, producing a digital output easily connected to
+a microprocessor. The raw output of most sensors is easily corrupted, hence, signal conditioning circuitry is located very close
+to the sensor, helping to shield against
+external interference. Once converted, the digital
+signal can easily be transmitted over great
+distances with minimal error. It is helpful to use a microcontroller
+for sensor systems. This device consists of a microprocessor with a built-in analog-to-digital
+converter. In this course, you'll be using the Cypress PSoC series
+of microcontrollers. This microcontroller also
+contains amplifiers, multiplexers, comparators, timers, counters,
+and shift registers. It minimizes the number of discrete components between the sensor and the
+microcontroller. It is a hardware
+programmable part. You design electronic circuits implemented as real hardware
+inside the PSoC chip. The hardware then interacts with the code you write in
+a seamless manner. The design environment for this part is called
+PSoC creator, and includes schematic capture in addition to a code editor. In addition, a handful
+of inexpensive sensors and actuators will be made available for you to
+purchase for this course, and future ones that are
+part of the specializations. Normally, you would need an expensive bench-top
+digital oscilloscope to take sensor readings, such as this one from Agilent. You may use this
+type of scope if you have access to one
+at work or school. However, for this class, you may also purchase a much
+lower cost oscilloscope, that you can connect
+to your laptop PC. We give you some suggestions of devices to purchase in
+the course syllabus. We hope you share our
+enthusiasm for building things. It's the best way to learn.

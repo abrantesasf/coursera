@@ -1,0 +1,310 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.850
+Most things we want to
+measure, for example,
+
+2
+00:00:02.850 --> 00:00:06.330
+temperature or pressure,
+are continuously varying.
+
+3
+00:00:06.330 --> 00:00:08.670
+The sensor data must
+be converted to
+
+4
+00:00:08.670 --> 00:00:10.530
+a digital format
+before it can be
+
+5
+00:00:10.530 --> 00:00:13.095
+interpreted by a microprocessor.
+
+6
+00:00:13.095 --> 00:00:16.170
+Applying power to a
+sensor so that it
+
+7
+00:00:16.170 --> 00:00:20.205
+produces a usable output
+is called excitation.
+
+8
+00:00:20.205 --> 00:00:23.250
+Analog circuitry excites filters
+
+9
+00:00:23.250 --> 00:00:26.040
+and amplifies the
+raw sensor signal,
+
+10
+00:00:26.040 --> 00:00:28.485
+a process called
+signal conditioning.
+
+11
+00:00:28.485 --> 00:00:30.780
+Once processed in this way,
+
+12
+00:00:30.780 --> 00:00:33.135
+the signal is sent to an ADC,
+
+13
+00:00:33.135 --> 00:00:35.985
+short for analog-to-digital
+converter.
+
+14
+00:00:35.985 --> 00:00:38.940
+The output of the
+ADC is typically 8,
+
+15
+00:00:38.940 --> 00:00:41.760
+12, 16, or 24 bits.
+
+16
+00:00:41.760 --> 00:00:46.745
+Data from an ADC is usually
+converted to a serial format,
+
+17
+00:00:46.745 --> 00:00:50.995
+such as I2C, SPI or RS-232.
+
+18
+00:00:50.995 --> 00:00:54.185
+Certain sensors,
+humidity in particular,
+
+19
+00:00:54.185 --> 00:00:56.390
+incorporate the analog front end
+
+20
+00:00:56.390 --> 00:00:58.085
+on a single chip solution,
+
+21
+00:00:58.085 --> 00:01:00.110
+producing a digital output
+
+22
+00:01:00.110 --> 00:01:03.515
+easily connected to
+a microprocessor.
+
+23
+00:01:03.515 --> 00:01:06.875
+The raw output of most sensors
+
+24
+00:01:06.875 --> 00:01:09.985
+is easily corrupted, hence,
+
+25
+00:01:09.985 --> 00:01:12.260
+signal conditioning circuitry is
+
+26
+00:01:12.260 --> 00:01:15.275
+located very close
+to the sensor,
+
+27
+00:01:15.275 --> 00:01:19.655
+helping to shield against
+external interference.
+
+28
+00:01:19.655 --> 00:01:23.540
+Once converted, the digital
+signal can easily be
+
+29
+00:01:23.540 --> 00:01:27.650
+transmitted over great
+distances with minimal error.
+
+30
+00:01:27.650 --> 00:01:29.420
+It is helpful to use
+
+31
+00:01:29.420 --> 00:01:32.105
+a microcontroller
+for sensor systems.
+
+32
+00:01:32.105 --> 00:01:34.280
+This device consists of
+
+33
+00:01:34.280 --> 00:01:35.930
+a microprocessor with
+
+34
+00:01:35.930 --> 00:01:38.885
+a built-in analog-to-digital
+converter.
+
+35
+00:01:38.885 --> 00:01:41.420
+In this course, you'll be using
+
+36
+00:01:41.420 --> 00:01:45.005
+the Cypress PSoC series
+of microcontrollers.
+
+37
+00:01:45.005 --> 00:01:49.160
+This microcontroller also
+contains amplifiers,
+
+38
+00:01:49.160 --> 00:01:50.990
+multiplexers, comparators,
+
+39
+00:01:50.990 --> 00:01:54.380
+timers, counters,
+and shift registers.
+
+40
+00:01:54.380 --> 00:01:56.660
+It minimizes the number of
+
+41
+00:01:56.660 --> 00:01:58.160
+discrete components between
+
+42
+00:01:58.160 --> 00:02:00.590
+the sensor and the
+microcontroller.
+
+43
+00:02:00.590 --> 00:02:03.205
+It is a hardware
+programmable part.
+
+44
+00:02:03.205 --> 00:02:05.735
+You design electronic circuits
+
+45
+00:02:05.735 --> 00:02:10.085
+implemented as real hardware
+inside the PSoC chip.
+
+46
+00:02:10.085 --> 00:02:12.620
+The hardware then interacts with
+
+47
+00:02:12.620 --> 00:02:15.620
+the code you write in
+a seamless manner.
+
+48
+00:02:15.620 --> 00:02:17.450
+The design environment for
+
+49
+00:02:17.450 --> 00:02:20.114
+this part is called
+PSoC creator,
+
+50
+00:02:20.114 --> 00:02:22.100
+and includes schematic capture
+
+51
+00:02:22.100 --> 00:02:23.965
+in addition to a code editor.
+
+52
+00:02:23.965 --> 00:02:27.980
+In addition, a handful
+of inexpensive sensors
+
+53
+00:02:27.980 --> 00:02:29.420
+and actuators will be made
+
+54
+00:02:29.420 --> 00:02:31.820
+available for you to
+purchase for this course,
+
+55
+00:02:31.820 --> 00:02:35.695
+and future ones that are
+part of the specializations.
+
+56
+00:02:35.695 --> 00:02:38.100
+Normally, you would need
+
+57
+00:02:38.100 --> 00:02:40.800
+an expensive bench-top
+digital oscilloscope
+
+58
+00:02:40.800 --> 00:02:42.315
+to take sensor readings,
+
+59
+00:02:42.315 --> 00:02:45.070
+such as this one from Agilent.
+
+60
+00:02:45.070 --> 00:02:48.440
+You may use this
+type of scope if you
+
+61
+00:02:48.440 --> 00:02:51.410
+have access to one
+at work or school.
+
+62
+00:02:51.410 --> 00:02:53.090
+However, for this class,
+
+63
+00:02:53.090 --> 00:02:57.035
+you may also purchase a much
+lower cost oscilloscope,
+
+64
+00:02:57.035 --> 00:02:59.855
+that you can connect
+to your laptop PC.
+
+65
+00:02:59.855 --> 00:03:01.760
+We give you some suggestions of
+
+66
+00:03:01.760 --> 00:03:04.990
+devices to purchase in
+the course syllabus.
+
+67
+00:03:04.990 --> 00:03:08.705
+We hope you share our
+enthusiasm for building things.
+
+68
+00:03:08.705 --> 00:03:11.580
+It's the best way to learn.
