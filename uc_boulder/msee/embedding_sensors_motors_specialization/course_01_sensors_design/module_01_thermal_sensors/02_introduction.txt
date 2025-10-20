@@ -1,1 +1,36 @@
-Okay people, now it's time to get serious. Let's have a show of hands here. Who here thinks that he or she is an absolute expert on sensors and actuators? I don't see any hands up, but that's good. Because if there were experts in the audience, I would wonder why you are wasting your time on a Coursera class. In course one of our specialization on embedding sensors and actuators, we will take a deep dive into temperature sensors. The granddaddy of all sensors. Its history dates back to the 18th century when guys named Fahrenheit and Celsius were around. We will get you started with your piece of development kit both hardware and software. There will be a few labs for you to do on schematics, amplifiers, wiring, and adding sensors to the kit. Then, we'll explain rotary sensors. You'll do some lab work with those sensors. Last, will tackle amplifiers, circuit diagrams, derivation of grade equations, noise issues and spec sheets. You need expertise on amplifiers to work with sensors because there's no such thing as a sensor circuit that doesn't have an amplifier. My partner Jim and I believe that online education should be just as rigorous as attending an upper class or graduate level engineering class in person. Learning about sensors and actuators requires in-depth study of analog electronics. Please review material you learned on this subject if you are having trouble keeping up. Every module will have reading assignments which you can download from the URL's listed in the class information. There will be lab assignments for you to perform and online quizzes for you to take. In module one of course one, we will give you a high level overview of sensors and actuators as well as the analog and digital interfaces that connect them to a digital circuit. Then, we will review the principles of operation and circuits for Thermocouples. RTD's and Thermistors.
+Okay people, now it's time to get serious.
+
+Let's have a show of hands here. Who here thinks that he or she is an absolute
+expert on sensors and actuators? I don't see any hands up, but that's
+good. Because if there were experts in the audience, I would wonder why you are
+wasting your time on a Coursera class.
+
+In course one of our specialization on embedding sensors and actuators, we will
+take a deep dive into temperature sensors. The granddaddy of all sensors. Its
+history dates back to the 18th century when guys named Fahrenheit and Celsius
+were around.
+
+We will get you started with your piece of development kit both hardware and
+software. There will be a few labs for you to do on schematics, amplifiers,
+wiring, and adding sensors to the kit. Then, we'll explain rotary
+sensors. You'll do some lab work with those sensors.
+
+Last, will tackle amplifiers, circuit diagrams, derivation of grade equations,
+noise issues and spec sheets. You need expertise on amplifiers to work with
+sensors because there's no such thing as a sensor circuit that doesn't have an
+amplifier.
+
+My partner Jim and I believe that online education should be just as rigorous as
+attending an upper class or graduate level engineering class in person. Learning
+about sensors and actuators requires in-depth study of analog
+electronics. Please review material you learned on this subject if you are
+having trouble keeping up.
+
+Every module will have reading assignments which you can download from the URL's
+listed in the class information. There will be lab assignments for you to
+perform and online quizzes for you to take.
+
+In module one of course one, we will give you a high level overview of sensors
+and actuators as well as the analog and digital interfaces that connect them to
+a digital circuit. Then, we will review the principles of operation and circuits
+for Thermocouples. RTD's and Thermistors.
