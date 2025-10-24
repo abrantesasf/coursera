@@ -1,0 +1,1256 @@
+WEBVTT
+
+1
+00:00:03.830 --> 00:00:07.780
+In this video, we'll do a
+little bit of an overview of
+
+2
+00:00:07.780 --> 00:00:09.700
+Linux and some of
+
+3
+00:00:09.700 --> 00:00:11.605
+the history behind it
+and how it became,
+
+4
+00:00:11.605 --> 00:00:14.230
+started to use in
+embedded systems.
+
+5
+00:00:14.230 --> 00:00:16.210
+If you want to trace the story
+
+6
+00:00:16.210 --> 00:00:18.010
+of Linux and embedded systems,
+
+7
+00:00:18.010 --> 00:00:20.635
+you can start by
+talking about the TiVo.
+
+8
+00:00:20.635 --> 00:00:26.605
+The TiVo debut in
+1999, just before Y2K,
+
+9
+00:00:26.605 --> 00:00:28.930
+where this was really one of
+
+10
+00:00:28.930 --> 00:00:31.705
+the first cases that we
+had Linux running on,
+
+11
+00:00:31.705 --> 00:00:33.640
+what we call an embedded device.
+
+12
+00:00:33.640 --> 00:00:35.470
+Not really a computer anymore,
+
+13
+00:00:35.470 --> 00:00:38.585
+now an actual product
+that a user would buy.
+
+14
+00:00:38.585 --> 00:00:40.630
+The TiVo was one of
+
+15
+00:00:40.630 --> 00:00:42.950
+the first products to
+do time shifting of TV,
+
+16
+00:00:42.950 --> 00:00:45.820
+so allow you to
+record live TV on
+
+17
+00:00:45.820 --> 00:00:50.960
+a hard drive and re-watch
+at a later time.
+
+18
+00:00:51.710 --> 00:00:54.300
+It was one of the
+first applications
+
+19
+00:00:54.300 --> 00:00:57.175
+that the hardware was
+
+20
+00:00:57.175 --> 00:00:59.710
+advanced enough to run Linux and
+
+21
+00:00:59.710 --> 00:01:02.920
+because of all the things
+that the box needed to do,
+
+22
+00:01:02.920 --> 00:01:04.540
+the storage aspects, the video
+
+23
+00:01:04.540 --> 00:01:06.160
+aspects that were
+already built into
+
+24
+00:01:06.160 --> 00:01:07.930
+Linux it made a lot of sense to
+
+25
+00:01:07.930 --> 00:01:10.605
+leverage Linux as a part
+of the implementation.
+
+26
+00:01:10.605 --> 00:01:13.770
+Fast-forward through
+to present day,
+
+27
+00:01:13.770 --> 00:01:17.275
+as of 2017, there are 2
+billion devices running Linux.
+
+28
+00:01:17.275 --> 00:01:18.730
+Really the 2000s,
+
+29
+00:01:18.730 --> 00:01:21.715
+the early 2000s have just
+been an explosion of
+
+30
+00:01:21.715 --> 00:01:23.320
+products that are using
+
+31
+00:01:23.320 --> 00:01:27.800
+Linux as the embedded
+operating system.
+
+32
+00:01:28.140 --> 00:01:30.500
+Why would you want
+to run Linux on
+
+33
+00:01:30.500 --> 00:01:33.395
+your embedded operating system?
+
+34
+00:01:33.395 --> 00:01:36.095
+Part of the reason that the book
+
+35
+00:01:36.095 --> 00:01:37.700
+Mastering Embedded
+Linux Programming
+
+36
+00:01:37.700 --> 00:01:40.850
+discusses is due to Moore's law.
+
+37
+00:01:40.850 --> 00:01:42.650
+Moore's Law says that,
+
+38
+00:01:42.650 --> 00:01:44.870
+" the capabilities of
+
+39
+00:01:44.870 --> 00:01:47.845
+processing roughly
+doubles every 10 months."
+
+40
+00:01:47.845 --> 00:01:52.370
+What this means is that
+embedded systems and
+
+41
+00:01:52.370 --> 00:01:54.710
+really all computing
+platforms have had
+
+42
+00:01:54.710 --> 00:01:56.270
+exponential growth in terms
+
+43
+00:01:56.270 --> 00:01:59.470
+of CPU processing capabilities.
+
+44
+00:01:59.470 --> 00:02:02.090
+The additional burden that's
+
+45
+00:02:02.090 --> 00:02:04.400
+associated with being
+able to run Linux,
+
+46
+00:02:04.400 --> 00:02:05.945
+is really less of a hurdle
+
+47
+00:02:05.945 --> 00:02:09.035
+in every year than it
+was the previous year.
+
+48
+00:02:09.035 --> 00:02:11.300
+In other words, as our
+computing platforms
+
+49
+00:02:11.300 --> 00:02:13.490
+for embedded have gotten
+more and more powerful,
+
+50
+00:02:13.490 --> 00:02:16.520
+it's become easier
+and cheaper for us to
+
+51
+00:02:16.520 --> 00:02:20.660
+include Linux as a part of
+the embedded distribution.
+
+52
+00:02:20.660 --> 00:02:23.150
+Why would you want to
+use Linux if you can?
+
+53
+00:02:23.150 --> 00:02:24.290
+Because there's a lot of
+
+54
+00:02:24.290 --> 00:02:26.420
+functionality that's
+built into Linux that
+
+55
+00:02:26.420 --> 00:02:28.910
+there's really no
+reason to recreate
+
+56
+00:02:28.910 --> 00:02:31.595
+yourself and if you were
+to recreate yourself,
+
+57
+00:02:31.595 --> 00:02:33.800
+the amount of engineering
+effort that you
+
+58
+00:02:33.800 --> 00:02:36.200
+would need is huge
+compared to what you
+
+59
+00:02:36.200 --> 00:02:39.485
+could do if you can leverage
+the work that's already done
+
+60
+00:02:39.485 --> 00:02:41.300
+by members of the community that
+
+61
+00:02:41.300 --> 00:02:44.395
+have similar needs to
+your embedded product.
+
+62
+00:02:44.395 --> 00:02:46.895
+For instance, supporting
+for scheduling,
+
+63
+00:02:46.895 --> 00:02:50.060
+scheduling threads
+and scheduling
+
+64
+00:02:50.060 --> 00:02:52.710
+that's happening in the operating
+system, network stacks.
+
+65
+00:02:52.710 --> 00:02:55.760
+Anything related
+to TCPIP or web,
+
+66
+00:02:55.760 --> 00:02:58.475
+which is usually a pretty
+common feature of embedded.
+
+67
+00:02:58.475 --> 00:03:01.295
+USB and Wi-Fi, Bluetooth,
+
+68
+00:03:01.295 --> 00:03:02.840
+all those hardware
+standards that are
+
+69
+00:03:02.840 --> 00:03:04.955
+very popular on
+embedded products,
+
+70
+00:03:04.955 --> 00:03:06.560
+there's levels of support
+
+71
+00:03:06.560 --> 00:03:08.540
+built for all of
+that into Linux.
+
+72
+00:03:08.540 --> 00:03:10.940
+Storage so the
+ability to record,
+
+73
+00:03:10.940 --> 00:03:14.190
+to flash or to hard disk drives.
+
+74
+00:03:14.190 --> 00:03:16.760
+There's a long list of
+functionality that is
+
+75
+00:03:16.760 --> 00:03:19.550
+common and has been
+implemented in Linux,
+
+76
+00:03:19.550 --> 00:03:20.720
+has been tested and used
+
+77
+00:03:20.720 --> 00:03:23.200
+on platforms for
+a very long time.
+
+78
+00:03:23.200 --> 00:03:24.800
+Being able to leverage that in
+
+79
+00:03:24.800 --> 00:03:27.340
+our embedded systems
+is a big bonus.
+
+80
+00:03:27.340 --> 00:03:32.675
+Linux is already ported to a
+wide range of architectures.
+
+81
+00:03:32.675 --> 00:03:34.820
+For instance, if
+you want to use ARM
+
+82
+00:03:34.820 --> 00:03:37.670
+due to cost constraints
+or the fact that
+
+83
+00:03:37.670 --> 00:03:39.740
+you can really hit
+
+84
+00:03:39.740 --> 00:03:42.905
+your price targets with
+that particular platform.
+
+85
+00:03:42.905 --> 00:03:44.840
+There's already Linux
+ports available
+
+86
+00:03:44.840 --> 00:03:47.135
+and you can already run ARM.
+
+87
+00:03:47.135 --> 00:03:48.740
+There's several
+other architectures
+
+88
+00:03:48.740 --> 00:03:50.180
+like that we can leverage in
+
+89
+00:03:50.180 --> 00:03:54.040
+an embedded systems and are
+already supported by Linux.
+
+90
+00:03:54.040 --> 00:03:56.595
+It's open source and modifiable.
+
+91
+00:03:56.595 --> 00:03:58.850
+What this means is
+that if you find
+
+92
+00:03:58.850 --> 00:04:02.660
+a problem that's specific
+to your individual device,
+
+93
+00:04:02.660 --> 00:04:04.610
+you don't have to
+go try to convince
+
+94
+00:04:04.610 --> 00:04:08.640
+some operating system
+manufacturer or developer,
+
+95
+00:04:08.640 --> 00:04:10.670
+that they need to fix
+this problem for you.
+
+96
+00:04:10.670 --> 00:04:11.990
+You have the source,
+
+97
+00:04:11.990 --> 00:04:14.225
+you can change it yourself,
+
+98
+00:04:14.225 --> 00:04:16.640
+or you could find experts
+that know the part of
+
+99
+00:04:16.640 --> 00:04:18.110
+the source that you need change
+
+100
+00:04:18.110 --> 00:04:19.510
+and have them change it for you.
+
+101
+00:04:19.510 --> 00:04:22.025
+That's a pretty big
+benefit in terms of
+
+102
+00:04:22.025 --> 00:04:23.855
+embedded systems development and
+
+103
+00:04:23.855 --> 00:04:25.910
+the freedom that you have
+and the flexibility,
+
+104
+00:04:25.910 --> 00:04:29.110
+you have choosing Linux
+as your operating system.
+
+105
+00:04:29.110 --> 00:04:31.605
+There's also an
+active community.
+
+106
+00:04:31.605 --> 00:04:33.290
+For every project that you use,
+
+107
+00:04:33.290 --> 00:04:35.630
+every open-source
+component that you use,
+
+108
+00:04:35.630 --> 00:04:38.045
+there's a community of
+people on mailing lists that
+
+109
+00:04:38.045 --> 00:04:40.550
+are experts in that
+particular software that are
+
+110
+00:04:40.550 --> 00:04:41.990
+available to help answer
+
+111
+00:04:41.990 --> 00:04:44.960
+your questions and help
+get you unstuck if you're
+
+112
+00:04:44.960 --> 00:04:46.700
+stuck on some
+specific problem with
+
+113
+00:04:46.700 --> 00:04:50.720
+that software and there's
+no vendor lock-in.
+
+114
+00:04:50.720 --> 00:04:53.164
+Because it's an open community,
+
+115
+00:04:53.164 --> 00:04:55.640
+there's lots of different
+people participating from
+
+116
+00:04:55.640 --> 00:04:59.970
+both business and
+personal perspectives.
+
+117
+00:04:59.970 --> 00:05:02.840
+There's no one company that's in
+
+118
+00:05:02.840 --> 00:05:06.005
+charge of controlling the
+roadmap for the software.
+
+119
+00:05:06.005 --> 00:05:07.640
+There's no one company that
+
+120
+00:05:07.640 --> 00:05:10.505
+you're beholden to in terms of
+
+121
+00:05:10.505 --> 00:05:13.070
+what features are going to
+be available and what you
+
+122
+00:05:13.070 --> 00:05:16.080
+can do with the code that's
+available from Linux.
+
+123
+00:05:16.080 --> 00:05:18.590
+It's all up to you
+since you have
+
+124
+00:05:18.590 --> 00:05:20.030
+access to the
+source and can make
+
+125
+00:05:20.030 --> 00:05:22.585
+the modifications
+yourself if needed.
+
+126
+00:05:22.585 --> 00:05:25.400
+Some of the things
+
+127
+00:05:25.400 --> 00:05:27.050
+that you need to consider
+before you decide if
+
+128
+00:05:27.050 --> 00:05:29.480
+Linux is the right solution for
+
+129
+00:05:29.480 --> 00:05:33.205
+your hardware or your
+embedded system design.
+
+130
+00:05:33.205 --> 00:05:36.815
+It will need a more
+powerful processor,
+
+131
+00:05:36.815 --> 00:05:40.670
+probably more storage
+and more RAM than if you
+
+132
+00:05:40.670 --> 00:05:44.925
+were just going to do a very
+simple embedded design.
+
+133
+00:05:44.925 --> 00:05:46.370
+Some of the designs
+that you've done
+
+134
+00:05:46.370 --> 00:05:48.470
+already with simple
+microcontrollers,
+
+135
+00:05:48.470 --> 00:05:50.300
+you might not really have
+the opportunity to run
+
+136
+00:05:50.300 --> 00:05:52.545
+Linux just based on
+hardware limitations.
+
+137
+00:05:52.545 --> 00:05:55.560
+For Linux you will need
+a 32-bit processor,
+
+138
+00:05:55.560 --> 00:05:58.260
+you'll need roughly
+at least 16 megabytes
+
+139
+00:05:58.260 --> 00:06:00.210
+of RAM and 8 megabytes of flash,
+
+140
+00:06:00.210 --> 00:06:04.395
+which every year becomes
+less and less of a hurdle.
+
+141
+00:06:04.395 --> 00:06:07.390
+It's much easier to find
+platforms that can support
+
+142
+00:06:07.390 --> 00:06:11.070
+this level of flash
+and RAM availability.
+
+143
+00:06:11.070 --> 00:06:13.240
+You also need a memory
+management unit,
+
+144
+00:06:13.240 --> 00:06:15.330
+so a dedicated piece
+of hardware on
+
+145
+00:06:15.330 --> 00:06:17.685
+the device that manages
+memory for you.
+
+146
+00:06:17.685 --> 00:06:19.200
+For all practical purposes,
+
+147
+00:06:19.200 --> 00:06:20.910
+there are ways to
+get around that,
+
+148
+00:06:20.910 --> 00:06:24.225
+but it's much easier
+if you have an MMU.
+
+149
+00:06:24.225 --> 00:06:27.030
+Those are the hardware
+limitations that you need to have
+
+150
+00:06:27.030 --> 00:06:29.985
+in order to know that you'll
+be able to support Linux.
+
+151
+00:06:29.985 --> 00:06:33.040
+You're going to need
+a set of engineers
+
+152
+00:06:33.040 --> 00:06:37.745
+that have some abilities
+in Linux development,
+
+153
+00:06:37.745 --> 00:06:41.390
+so that will be you after
+you complete this course and
+
+154
+00:06:41.390 --> 00:06:44.220
+there may be some
+real-time applications
+
+155
+00:06:44.220 --> 00:06:46.275
+where Linux is not a great fit,
+
+156
+00:06:46.275 --> 00:06:48.510
+or where you need to do
+some custom tuning to
+
+157
+00:06:48.510 --> 00:06:51.200
+the kernel to bring in
+real-time extensions.
+
+158
+00:06:51.200 --> 00:06:53.775
+That's outside the
+scope of this course,
+
+159
+00:06:53.775 --> 00:06:55.150
+but these are some
+
+160
+00:06:55.150 --> 00:06:56.400
+of the things that you'd
+need to think about it in
+
+161
+00:06:56.400 --> 00:06:58.140
+the context of a
+specific development
+
+162
+00:06:58.140 --> 00:07:00.915
+to know if Linux is
+the right platform.
+
+163
+00:07:00.915 --> 00:07:06.375
+Who are the players in
+Linux software development?
+
+164
+00:07:06.375 --> 00:07:09.190
+Who is responsible for bringing
+
+165
+00:07:09.190 --> 00:07:12.995
+new releases to you
+
+166
+00:07:12.995 --> 00:07:15.555
+or for adding support
+for the platforms?
+
+167
+00:07:15.555 --> 00:07:17.985
+First, there's the
+open-source community,
+
+168
+00:07:17.985 --> 00:07:21.395
+which is really just an
+alliance of developers that
+
+169
+00:07:21.395 --> 00:07:26.060
+run the gamut of
+different goals, desires,
+
+170
+00:07:26.060 --> 00:07:30.410
+including not for profit
+companies, academics,
+
+171
+00:07:30.410 --> 00:07:34.150
+and also commercial companies
+that are all participating
+
+172
+00:07:34.150 --> 00:07:35.905
+in development of Linux
+
+173
+00:07:35.905 --> 00:07:38.635
+as open-source
+software developers.
+
+174
+00:07:38.635 --> 00:07:40.800
+There's generally a group of
+
+175
+00:07:40.800 --> 00:07:44.430
+open-source developers for
+every set of applications.
+
+176
+00:07:44.430 --> 00:07:46.830
+The individual applications
+that we'll talk
+
+177
+00:07:46.830 --> 00:07:50.010
+about as a part of the course.
+
+178
+00:07:50.010 --> 00:07:52.650
+They build tools that we're
+going to use to build
+
+179
+00:07:52.650 --> 00:07:55.560
+the embedded Linux
+distributions.
+
+180
+00:07:55.560 --> 00:07:57.330
+Behind every one
+of those groups,
+
+181
+00:07:57.330 --> 00:08:01.570
+there's a set of individuals
+that are developing
+
+182
+00:08:01.570 --> 00:08:03.615
+that particular software and
+
+183
+00:08:03.615 --> 00:08:04.810
+that's the group that's going to
+
+184
+00:08:04.810 --> 00:08:06.390
+have the experts in it that
+you're going to be able to
+
+185
+00:08:06.390 --> 00:08:08.475
+reach out to with questions.
+
+186
+00:08:08.475 --> 00:08:10.440
+Also, the group that
+you'd go to if you
+
+187
+00:08:10.440 --> 00:08:12.365
+wanted to make a
+change to discuss what
+
+188
+00:08:12.365 --> 00:08:15.170
+your change is and
+ultimately submit patches
+
+189
+00:08:15.170 --> 00:08:16.480
+for their review and
+
+190
+00:08:16.480 --> 00:08:19.190
+approval to be added
+into the software.
+
+191
+00:08:19.190 --> 00:08:22.155
+Then there's also
+CPU architects,
+
+192
+00:08:22.155 --> 00:08:23.625
+SOC vendors, board vendors.
+
+193
+00:08:23.625 --> 00:08:25.500
+These are the people that
+are making the hardware
+
+194
+00:08:25.500 --> 00:08:28.130
+that's going to run Linux.
+
+195
+00:08:28.130 --> 00:08:30.900
+A lot of times what you'll
+see is they'll try to
+
+196
+00:08:30.900 --> 00:08:32.075
+make it as easy as possible
+
+197
+00:08:32.075 --> 00:08:33.540
+for you to incorporate Linux,
+
+198
+00:08:33.540 --> 00:08:34.745
+so they'll create what's called
+
+199
+00:08:34.745 --> 00:08:37.005
+BSPs or board support packages,
+
+200
+00:08:37.005 --> 00:08:39.450
+that bundle all the things
+
+201
+00:08:39.450 --> 00:08:41.620
+that you need in order to
+be able to run Linux on
+
+202
+00:08:41.620 --> 00:08:44.710
+their particular hardware and
+create a reference design
+
+203
+00:08:44.710 --> 00:08:46.085
+for you so it's
+easier for you to get
+
+204
+00:08:46.085 --> 00:08:48.940
+started running Linux
+on their hardware.
+
+205
+00:08:49.520 --> 00:08:53.390
+More reasons to run Linux.
+
+206
+00:08:55.230 --> 00:08:58.040
+If you're using software,
+
+207
+00:08:58.040 --> 00:09:00.920
+there's essentially
+a shelf life.
+
+208
+00:09:05.300 --> 00:09:08.460
+One of the benefits
+of using Linux
+
+209
+00:09:08.460 --> 00:09:11.565
+is having this dedicated
+community behind you.
+
+210
+00:09:11.565 --> 00:09:14.230
+It's too much for you to be
+
+211
+00:09:14.230 --> 00:09:17.180
+able to keep up with every
+single software package.
+
+212
+00:09:17.180 --> 00:09:19.890
+Keep up as new packages
+are developed.
+
+213
+00:09:19.890 --> 00:09:22.005
+As new compiler
+versions come out,
+
+214
+00:09:22.005 --> 00:09:23.250
+you want to be able
+to leverage all
+
+215
+00:09:23.250 --> 00:09:24.270
+the work that's being done in
+
+216
+00:09:24.270 --> 00:09:27.170
+the community to
+stay up to date.
+
+217
+00:09:27.170 --> 00:09:29.250
+Bugs are a fact of life.
+
+218
+00:09:29.250 --> 00:09:31.675
+They're going to happen in
+every software application.
+
+219
+00:09:31.675 --> 00:09:32.880
+You want to be able to bring in
+
+220
+00:09:32.880 --> 00:09:34.020
+the changes from the community
+
+221
+00:09:34.020 --> 00:09:36.300
+that fixed bugs as easily as
+
+222
+00:09:36.300 --> 00:09:39.245
+possible and to be able to
+keep up with that without
+
+223
+00:09:39.245 --> 00:09:40.410
+a lot of individual work
+
+224
+00:09:40.410 --> 00:09:43.240
+from your software
+development team.
+
+225
+00:09:43.240 --> 00:09:47.615
+The BSPs that I talked
+about previously,
+
+226
+00:09:47.615 --> 00:09:49.595
+companies might start with
+
+227
+00:09:49.595 --> 00:09:51.270
+one particular version of
+
+228
+00:09:51.270 --> 00:09:53.930
+the kernel for their
+BSP implementation.
+
+229
+00:09:53.930 --> 00:09:55.805
+But they might not
+
+230
+00:09:55.805 --> 00:09:58.355
+necessarily keep that
+up-to-date going forward,
+
+231
+00:09:58.355 --> 00:10:00.030
+like they might have
+an example that they
+
+232
+00:10:00.030 --> 00:10:01.920
+did when the hardware was
+
+233
+00:10:01.920 --> 00:10:03.910
+first developed and maybe
+now you're going to
+
+234
+00:10:03.910 --> 00:10:05.960
+use the hardware and it's
+two or three years later,
+
+235
+00:10:05.960 --> 00:10:07.620
+maybe their BSP is still
+
+236
+00:10:07.620 --> 00:10:10.695
+referencing an old version
+of the kernel for instance.
+
+237
+00:10:10.695 --> 00:10:14.335
+Using Linux allows you
+to do your own work
+
+238
+00:10:14.335 --> 00:10:17.365
+to customize what
+they've given you and
+
+239
+00:10:17.365 --> 00:10:19.460
+bring it up to date and
+stay up current with
+
+240
+00:10:19.460 --> 00:10:23.020
+the most recent Linux
+applications or
+
+241
+00:10:23.020 --> 00:10:28.190
+Linux kernel especially with
+fixes for security bugs.
+
+242
+00:10:28.190 --> 00:10:31.170
+Part of the reason that
+it's important to keep
+
+243
+00:10:31.170 --> 00:10:34.175
+up with security issues,
+
+244
+00:10:34.175 --> 00:10:38.320
+you may have heard of the
+HeartBleed case from 2014,
+
+245
+00:10:38.320 --> 00:10:39.580
+and this was a bug in a very
+
+246
+00:10:39.580 --> 00:10:41.910
+popular OpenSSL library where
+
+247
+00:10:41.910 --> 00:10:43.805
+OpenSSL is used to secure
+
+248
+00:10:43.805 --> 00:10:46.920
+communications that
+happen over the Internet.
+
+249
+00:10:46.920 --> 00:10:51.725
+Even to this day, or as of 2017,
+
+250
+00:10:51.725 --> 00:10:54.390
+there was a study that was
+done that said almost 200,000
+
+251
+00:10:54.390 --> 00:10:58.580
+devices are still running
+in the field with this bug.
+
+252
+00:10:58.580 --> 00:11:01.100
+Part of the reason that
+
+253
+00:11:01.100 --> 00:11:03.600
+they were running
+with this bug is that
+
+254
+00:11:03.600 --> 00:11:05.700
+they weren't able to
+make it a part of
+
+255
+00:11:05.700 --> 00:11:08.660
+their development process to
+incorporate updates easily.
+
+256
+00:11:08.660 --> 00:11:11.400
+While that's something that
+
+257
+00:11:11.400 --> 00:11:13.415
+the Linux community is
+going to allow you to do,
+
+258
+00:11:13.415 --> 00:11:15.600
+there's some work you need
+to do in order to do that
+
+259
+00:11:15.600 --> 00:11:16.990
+and there's some tools that can
+
+260
+00:11:16.990 --> 00:11:18.570
+help you keep up
+to date with that,
+
+261
+00:11:18.570 --> 00:11:20.105
+like [inaudible]
+that we're going
+
+262
+00:11:20.105 --> 00:11:21.830
+to cover in this
+part of the course.
+
+263
+00:11:21.830 --> 00:11:24.660
+But the main thing to
+know here is that being
+
+264
+00:11:24.660 --> 00:11:27.460
+a part of the community
+and keeping up with
+
+265
+00:11:27.460 --> 00:11:29.470
+the new releases that come
+from a community can help you
+
+266
+00:11:29.470 --> 00:11:31.900
+solve this problem in Linux in
+
+267
+00:11:31.900 --> 00:11:34.170
+a way that it wouldn't if
+you were trying to roll
+
+268
+00:11:34.170 --> 00:11:36.000
+your own distribution and
+
+269
+00:11:36.000 --> 00:11:39.530
+responsible for every
+single part of the process.

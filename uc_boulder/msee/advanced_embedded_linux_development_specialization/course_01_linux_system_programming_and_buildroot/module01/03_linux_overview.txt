@@ -1,0 +1,180 @@
+In this video, we'll do a
+little bit of an overview of Linux and some of the history behind it
+and how it became, started to use in
+embedded systems. If you want to trace the story of Linux and embedded systems, you can start by
+talking about the TiVo. The TiVo debut in
+1999, just before Y2K, where this was really one of the first cases that we
+had Linux running on, what we call an embedded device. Not really a computer anymore, now an actual product
+that a user would buy. The TiVo was one of the first products to
+do time shifting of TV, so allow you to
+record live TV on a hard drive and re-watch
+at a later time. It was one of the
+first applications that the hardware was advanced enough to run Linux and because of all the things
+that the box needed to do, the storage aspects, the video aspects that were
+already built into Linux it made a lot of sense to leverage Linux as a part
+of the implementation. Fast-forward through
+to present day, as of 2017, there are 2
+billion devices running Linux. Really the 2000s, the early 2000s have just
+been an explosion of products that are using Linux as the embedded
+operating system. Why would you want
+to run Linux on your embedded operating system? Part of the reason that the book Mastering Embedded
+Linux Programming discusses is due to Moore's law. Moore's Law says that, " the capabilities of processing roughly
+doubles every 10 months." What this means is that
+embedded systems and really all computing
+platforms have had exponential growth in terms of CPU processing capabilities. The additional burden that's associated with being
+able to run Linux, is really less of a hurdle in every year than it
+was the previous year. In other words, as our
+computing platforms for embedded have gotten
+more and more powerful, it's become easier
+and cheaper for us to include Linux as a part of
+the embedded distribution. Why would you want to
+use Linux if you can? Because there's a lot of functionality that's
+built into Linux that there's really no
+reason to recreate yourself and if you were
+to recreate yourself, the amount of engineering
+effort that you would need is huge
+compared to what you could do if you can leverage
+the work that's already done by members of the community that have similar needs to
+your embedded product. For instance, supporting
+for scheduling, scheduling threads
+and scheduling that's happening in the operating
+system, network stacks. Anything related
+to TCPIP or web, which is usually a pretty
+common feature of embedded. USB and Wi-Fi, Bluetooth, all those hardware
+standards that are very popular on
+embedded products, there's levels of support built for all of
+that into Linux. Storage so the
+ability to record, to flash or to hard disk drives. There's a long list of
+functionality that is common and has been
+implemented in Linux, has been tested and used on platforms for
+a very long time. Being able to leverage that in our embedded systems
+is a big bonus. Linux is already ported to a
+wide range of architectures. For instance, if
+you want to use ARM due to cost constraints
+or the fact that you can really hit your price targets with
+that particular platform. There's already Linux
+ports available and you can already run ARM. There's several
+other architectures like that we can leverage in an embedded systems and are
+already supported by Linux. It's open source and modifiable. What this means is
+that if you find a problem that's specific
+to your individual device, you don't have to
+go try to convince some operating system
+manufacturer or developer, that they need to fix
+this problem for you. You have the source, you can change it yourself, or you could find experts
+that know the part of the source that you need change and have them change it for you. That's a pretty big
+benefit in terms of embedded systems development and the freedom that you have
+and the flexibility, you have choosing Linux
+as your operating system. There's also an
+active community. For every project that you use, every open-source
+component that you use, there's a community of
+people on mailing lists that are experts in that
+particular software that are available to help answer your questions and help
+get you unstuck if you're stuck on some
+specific problem with that software and there's
+no vendor lock-in. Because it's an open community, there's lots of different
+people participating from both business and
+personal perspectives. There's no one company that's in charge of controlling the
+roadmap for the software. There's no one company that you're beholden to in terms of what features are going to
+be available and what you can do with the code that's
+available from Linux. It's all up to you
+since you have access to the
+source and can make the modifications
+yourself if needed. Some of the things that you need to consider
+before you decide if Linux is the right solution for your hardware or your
+embedded system design. It will need a more
+powerful processor, probably more storage
+and more RAM than if you were just going to do a very
+simple embedded design. Some of the designs
+that you've done already with simple
+microcontrollers, you might not really have
+the opportunity to run Linux just based on
+hardware limitations. For Linux you will need
+a 32-bit processor, you'll need roughly
+at least 16 megabytes of RAM and 8 megabytes of flash, which every year becomes
+less and less of a hurdle. It's much easier to find
+platforms that can support this level of flash
+and RAM availability. You also need a memory
+management unit, so a dedicated piece
+of hardware on the device that manages
+memory for you. For all practical purposes, there are ways to
+get around that, but it's much easier
+if you have an MMU. Those are the hardware
+limitations that you need to have in order to know that you'll
+be able to support Linux. You're going to need
+a set of engineers that have some abilities
+in Linux development, so that will be you after
+you complete this course and there may be some
+real-time applications where Linux is not a great fit, or where you need to do
+some custom tuning to the kernel to bring in
+real-time extensions. That's outside the
+scope of this course, but these are some of the things that you'd
+need to think about it in the context of a
+specific development to know if Linux is
+the right platform. Who are the players in
+Linux software development? Who is responsible for bringing new releases to you or for adding support
+for the platforms? First, there's the
+open-source community, which is really just an
+alliance of developers that run the gamut of
+different goals, desires, including not for profit
+companies, academics, and also commercial companies
+that are all participating in development of Linux as open-source
+software developers. There's generally a group of open-source developers for
+every set of applications. The individual applications
+that we'll talk about as a part of the course. They build tools that we're
+going to use to build the embedded Linux
+distributions. Behind every one
+of those groups, there's a set of individuals
+that are developing that particular software and that's the group that's going to have the experts in it that
+you're going to be able to reach out to with questions. Also, the group that
+you'd go to if you wanted to make a
+change to discuss what your change is and
+ultimately submit patches for their review and approval to be added
+into the software. Then there's also
+CPU architects, SOC vendors, board vendors. These are the people that
+are making the hardware that's going to run Linux. A lot of times what you'll
+see is they'll try to make it as easy as possible for you to incorporate Linux, so they'll create what's called BSPs or board support packages, that bundle all the things that you need in order to
+be able to run Linux on their particular hardware and
+create a reference design for you so it's
+easier for you to get started running Linux
+on their hardware. More reasons to run Linux. If you're using software, there's essentially
+a shelf life. One of the benefits
+of using Linux is having this dedicated
+community behind you. It's too much for you to be able to keep up with every
+single software package. Keep up as new packages
+are developed. As new compiler
+versions come out, you want to be able
+to leverage all the work that's being done in the community to
+stay up to date. Bugs are a fact of life. They're going to happen in
+every software application. You want to be able to bring in the changes from the community that fixed bugs as easily as possible and to be able to
+keep up with that without a lot of individual work from your software
+development team. The BSPs that I talked
+about previously, companies might start with one particular version of the kernel for their
+BSP implementation. But they might not necessarily keep that
+up-to-date going forward, like they might have
+an example that they did when the hardware was first developed and maybe
+now you're going to use the hardware and it's
+two or three years later, maybe their BSP is still referencing an old version
+of the kernel for instance. Using Linux allows you
+to do your own work to customize what
+they've given you and bring it up to date and
+stay up current with the most recent Linux
+applications or Linux kernel especially with
+fixes for security bugs. Part of the reason that
+it's important to keep up with security issues, you may have heard of the
+HeartBleed case from 2014, and this was a bug in a very popular OpenSSL library where OpenSSL is used to secure communications that
+happen over the Internet. Even to this day, or as of 2017, there was a study that was
+done that said almost 200,000 devices are still running
+in the field with this bug. Part of the reason that they were running
+with this bug is that they weren't able to
+make it a part of their development process to
+incorporate updates easily. While that's something that the Linux community is
+going to allow you to do, there's some work you need
+to do in order to do that and there's some tools that can help you keep up
+to date with that, like [inaudible]
+that we're going to cover in this
+part of the course. But the main thing to
+know here is that being a part of the community
+and keeping up with the new releases that come
+from a community can help you solve this problem in Linux in a way that it wouldn't if
+you were trying to roll your own distribution and responsible for every
+single part of the process.
