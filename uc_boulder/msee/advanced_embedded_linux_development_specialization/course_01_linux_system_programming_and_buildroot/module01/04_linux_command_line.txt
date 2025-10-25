@@ -1,0 +1,123 @@
+Hi students. In this video, we're going to be
+talking more about the Linux Command Line
+and go over some basic, common Linux utilities that you'll be using heavily
+in this course. First of all, why would we
+want to use the command line? So you might say, "Well, I just installed Ubuntu
+and I logged in, it's got this fancy,
+nice graphical UI, why don't I just use that?" Well, you definitely can, and you should absolutely use the graphical UI especially if that makes it easy
+for you starting out. However, a lot of the work that we're going to
+do in this course is going to be talking about
+automation and scripting. How to make things
+happen automatically based on a list of instructions that we're going to
+write into a script. A lot of that is going to be interacting with the terminal. You're going to need to get comfortable with the
+terminal as a part of completing the assignments and the coursework
+for this course. Some other reasons to
+learn the command line is because it is the only thing
+that every Linux system has. It's the only common thing that you'll find across
+all Linux systems. Desktop distributions are going
+to be slightly different. Sometimes in recovery
+scenarios, for instance, you might not even have access
+to a desktop environment. If you think about the embedded devices that
+we're going to work on, you might not have any kind
+of HDMI or video output. It might be that the only real
+way you can interact with the devices is through a
+command-line terminal. Even if you normally would have a UI type of environment
+to work with, in Linux, often when
+you have a problem, you might not have the
+option to use the UI. The problem might happen
+early in a boot sequence before you're able to
+load a UI, for instance. Again, command line becomes
+the least common denominator of what's available at a given point anytime
+we're booting the system. It's often just the
+easiest, fastest, and the most reliable way to
+remotely access the system. There's other ways to set up so that you can get access
+to the full UI remotely. But it becomes a lot
+faster if you get used to using the command line
+to do those tests. Talking a little bit about some really common Linux utilities that are available for I/O. First one is echo. This allows us to
+do the typical, Hello World that you start
+every assignment with. If I say echo and then put
+Hello World in quotes, I simply echo the content of the past back out
+to the terminal. There's another I/O application that's really popular
+and useful as cat. What cat is short
+for concatenate, which means just print out whatever file that I specified
+out to the terminal. In this case, if I
+have a text file that's located in my directory that says ECEN 5013 is awesome. If I just type cat in
+the name of that file, it'll copy out the contents
+of the file to the terminal. If I want to move back and forth between
+different directories, there's a command called PWD, which stands for Print
+Working Directory. This will tell me where I'm at in the directory hierarchy. If I'm at a random command line, I type PWD, I can see that I'm actually at home/ecen 5013
+in the file system. Ls is also useful command that lets you list the
+contents of a directory. If I am in my home
+directory and I type Ls, I can see all the
+different, in this case, the blue list is the
+directories that are created in my home directory, and this white example
+is an example of a file. To move around between
+directories, I can use cd. Cd plus the directory
+name will move me into that directory
+from the terminal, and then I could use Ls to list the contents of that
+directory, for instance. Mkdir could make a new directory based on the name
+that you specify. Some other common directory
+in file manipulation, mv is going to move. So you can move files or
+directories to a new location. Cp is going to copy. In the move case,
+you're going to take the file out of one directory, put
+it in another one. In the copy case you're
+going to make a duplicate of the file from one
+location to another. Rm is going to be removing
+either a directory or a file based on the file
+name that you pass. One other common
+utility that you'll use in this course is touch. What touch does is just
+updates a file's timestamp. If the file already exists or
+if the file doesn't exist, it's just going to
+create an empty file and update the timestamp
+to the current timestamp. For all of these commands and every command that you
+deal with on the terminal, there's what are
+called the man pages, that our short for manual pages, you can use to find
+out more details about how to use a command. The cp command that we
+talked about before, if you use man cp to get more information
+about that command, you'll see all the
+different options that you can pass
+to the command. If you read through
+the description, you'll see all the details about the specific options that you can provide and
+what every option does. The man program in the
+manual references here, date back to the original
+Unix Programmer's Manual from 1971. If you look at these numbers
+in parentheses here, these are actual
+referencing chapters of the Unix Programmer's Manual. In this case, Chapter
+1 is talking about cp, and it's all of the user
+commands that you can issue on the terminal for
+Unix-Linux based system. Cp man is also easy
+to search via Google. A lot of times
+rather than going to the terminal and type
+man, whatever I want, I will just type man plus the command name
+directly into Google. You'll pull up sites that
+have man pages online. This is a handy way of
+referencing those and of looking those up
+using your web term. Here's an example of use
+of the cp command and looking for more
+information to use the cp command using
+the man function. In this case, I changed directory into my
+electro 2 directory. Then I make a new directory
+called A directory and I make a sub-directory under
+that called A subdir. Then I'm going to
+make a directory that's going to be the
+target of a copy command, so I make A copy
+target directory. Then I'm going to try to copy A directory to A copy
+target directory, again using the source-destination
+format here for cp. What I'll notice is if
+I run this command, I get an error message
+that comes back that says -r not specified, omitting directory A directory. What it's telling
+me here is that it didn't actually
+copy one directory to my target directory because I didn't specify the -r option. If I go back to the screen I looked at before
+where I typed man cp and a terminal and I pull
+up the man page for cp, one of the things I can look
+for is the -r option for cp. I can see what the
+-r option does. In this case, it's saying
+copy directories recursively. Because I'm trying to
+copy A directory and A subdirectory recursively
+into my copy target, I'm going to need
+to specify cp -r as the error message suggested. To fix this, I could do cp -r and reference the copy directory into the copy target directory. If I install the tree command
+that I mentioned before, so I can visualize the
+directory tree structure. Once I look under the A
+copy target directory, I'll see my A directory
+and A subdirectory. I can see that that structure actually matches the structure that I intended to
+copying with cp.

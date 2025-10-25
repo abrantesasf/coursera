@@ -1,0 +1,867 @@
+WEBVTT
+
+1
+00:00:00.260 --> 00:00:02.940
+Hi students. In this video,
+
+2
+00:00:02.940 --> 00:00:04.500
+we're going to be
+talking more about
+
+3
+00:00:04.500 --> 00:00:06.540
+the Linux Command Line
+and go over some basic,
+
+4
+00:00:06.540 --> 00:00:08.040
+common Linux utilities that
+
+5
+00:00:08.040 --> 00:00:10.440
+you'll be using heavily
+in this course.
+
+6
+00:00:10.440 --> 00:00:13.350
+First of all, why would we
+want to use the command line?
+
+7
+00:00:13.350 --> 00:00:14.685
+So you might say, "Well,
+
+8
+00:00:14.685 --> 00:00:16.860
+I just installed Ubuntu
+and I logged in,
+
+9
+00:00:16.860 --> 00:00:19.080
+it's got this fancy,
+nice graphical UI,
+
+10
+00:00:19.080 --> 00:00:20.625
+why don't I just use that?"
+
+11
+00:00:20.625 --> 00:00:22.200
+Well, you definitely can,
+
+12
+00:00:22.200 --> 00:00:24.570
+and you should absolutely use
+
+13
+00:00:24.570 --> 00:00:27.240
+the graphical UI especially
+
+14
+00:00:27.240 --> 00:00:29.535
+if that makes it easy
+for you starting out.
+
+15
+00:00:29.535 --> 00:00:30.930
+However, a lot of the work
+
+16
+00:00:30.930 --> 00:00:32.130
+that we're going to
+do in this course
+
+17
+00:00:32.130 --> 00:00:34.600
+is going to be talking about
+automation and scripting.
+
+18
+00:00:34.600 --> 00:00:36.960
+How to make things
+happen automatically
+
+19
+00:00:36.960 --> 00:00:38.850
+based on a list of instructions
+
+20
+00:00:38.850 --> 00:00:40.170
+that we're going to
+write into a script.
+
+21
+00:00:40.170 --> 00:00:41.570
+A lot of that is going to be
+
+22
+00:00:41.570 --> 00:00:43.020
+interacting with the terminal.
+
+23
+00:00:43.020 --> 00:00:44.060
+You're going to need to get
+
+24
+00:00:44.060 --> 00:00:45.890
+comfortable with the
+terminal as a part
+
+25
+00:00:45.890 --> 00:00:47.480
+of completing the assignments
+
+26
+00:00:47.480 --> 00:00:50.490
+and the coursework
+for this course.
+
+27
+00:00:50.780 --> 00:00:54.140
+Some other reasons to
+learn the command line is
+
+28
+00:00:54.140 --> 00:00:57.260
+because it is the only thing
+that every Linux system has.
+
+29
+00:00:57.260 --> 00:00:58.970
+It's the only common thing
+
+30
+00:00:58.970 --> 00:01:00.965
+that you'll find across
+all Linux systems.
+
+31
+00:01:00.965 --> 00:01:03.715
+Desktop distributions are going
+to be slightly different.
+
+32
+00:01:03.715 --> 00:01:06.470
+Sometimes in recovery
+scenarios, for instance,
+
+33
+00:01:06.470 --> 00:01:09.890
+you might not even have access
+to a desktop environment.
+
+34
+00:01:09.890 --> 00:01:11.960
+If you think about the
+
+35
+00:01:11.960 --> 00:01:14.380
+embedded devices that
+we're going to work on,
+
+36
+00:01:14.380 --> 00:01:18.190
+you might not have any kind
+of HDMI or video output.
+
+37
+00:01:18.190 --> 00:01:20.300
+It might be that the only real
+way you can interact with
+
+38
+00:01:20.300 --> 00:01:25.010
+the devices is through a
+command-line terminal.
+
+39
+00:01:25.640 --> 00:01:28.565
+Even if you normally would have
+
+40
+00:01:28.565 --> 00:01:32.240
+a UI type of environment
+to work with,
+
+41
+00:01:32.240 --> 00:01:36.700
+in Linux, often when
+you have a problem,
+
+42
+00:01:36.700 --> 00:01:39.740
+you might not have the
+option to use the UI.
+
+43
+00:01:39.740 --> 00:01:41.990
+The problem might happen
+early in a boot sequence
+
+44
+00:01:41.990 --> 00:01:44.720
+before you're able to
+load a UI, for instance.
+
+45
+00:01:44.720 --> 00:01:48.170
+Again, command line becomes
+the least common denominator
+
+46
+00:01:48.170 --> 00:01:51.740
+of what's available at
+
+47
+00:01:51.740 --> 00:01:54.350
+a given point anytime
+we're booting the system.
+
+48
+00:01:54.350 --> 00:01:56.570
+It's often just the
+easiest, fastest,
+
+49
+00:01:56.570 --> 00:01:59.830
+and the most reliable way to
+remotely access the system.
+
+50
+00:01:59.830 --> 00:02:02.060
+There's other ways to set up so
+
+51
+00:02:02.060 --> 00:02:04.400
+that you can get access
+to the full UI remotely.
+
+52
+00:02:04.400 --> 00:02:07.070
+But it becomes a lot
+faster if you get used to
+
+53
+00:02:07.070 --> 00:02:10.475
+using the command line
+to do those tests.
+
+54
+00:02:10.475 --> 00:02:12.500
+Talking a little bit about some
+
+55
+00:02:12.500 --> 00:02:14.585
+really common Linux utilities
+
+56
+00:02:14.585 --> 00:02:16.720
+that are available for I/O.
+
+57
+00:02:16.720 --> 00:02:18.405
+First one is echo.
+
+58
+00:02:18.405 --> 00:02:21.410
+This allows us to
+do the typical,
+
+59
+00:02:21.410 --> 00:02:24.770
+Hello World that you start
+every assignment with.
+
+60
+00:02:24.770 --> 00:02:28.130
+If I say echo and then put
+Hello World in quotes,
+
+61
+00:02:28.130 --> 00:02:30.650
+I simply echo the content of
+
+62
+00:02:30.650 --> 00:02:34.410
+the past back out
+to the terminal.
+
+63
+00:02:34.940 --> 00:02:38.960
+There's another I/O application
+
+64
+00:02:38.960 --> 00:02:41.270
+that's really popular
+and useful as cat.
+
+65
+00:02:41.270 --> 00:02:43.535
+What cat is short
+for concatenate,
+
+66
+00:02:43.535 --> 00:02:44.945
+which means just print out
+
+67
+00:02:44.945 --> 00:02:48.565
+whatever file that I specified
+out to the terminal.
+
+68
+00:02:48.565 --> 00:02:50.300
+In this case, if I
+have a text file
+
+69
+00:02:50.300 --> 00:02:51.620
+that's located in my directory
+
+70
+00:02:51.620 --> 00:02:54.590
+that says ECEN 5013 is awesome.
+
+71
+00:02:54.590 --> 00:02:56.840
+If I just type cat in
+the name of that file,
+
+72
+00:02:56.840 --> 00:03:00.300
+it'll copy out the contents
+of the file to the terminal.
+
+73
+00:03:00.950 --> 00:03:03.350
+If I want to move back and
+
+74
+00:03:03.350 --> 00:03:05.345
+forth between
+different directories,
+
+75
+00:03:05.345 --> 00:03:06.860
+there's a command called PWD,
+
+76
+00:03:06.860 --> 00:03:08.915
+which stands for Print
+Working Directory.
+
+77
+00:03:08.915 --> 00:03:10.355
+This will tell me where I'm at
+
+78
+00:03:10.355 --> 00:03:12.235
+in the directory hierarchy.
+
+79
+00:03:12.235 --> 00:03:13.950
+If I'm at a random command line,
+
+80
+00:03:13.950 --> 00:03:15.030
+I type PWD,
+
+81
+00:03:15.030 --> 00:03:16.110
+I can see that I'm actually
+
+82
+00:03:16.110 --> 00:03:20.055
+at home/ecen 5013
+in the file system.
+
+83
+00:03:20.055 --> 00:03:22.790
+Ls is also useful command that
+
+84
+00:03:22.790 --> 00:03:24.920
+lets you list the
+contents of a directory.
+
+85
+00:03:24.920 --> 00:03:28.495
+If I am in my home
+directory and I type Ls,
+
+86
+00:03:28.495 --> 00:03:30.950
+I can see all the
+different, in this case,
+
+87
+00:03:30.950 --> 00:03:33.710
+the blue list is the
+directories that are
+
+88
+00:03:33.710 --> 00:03:36.770
+created in my home directory,
+
+89
+00:03:36.770 --> 00:03:40.680
+and this white example
+is an example of a file.
+
+90
+00:03:41.480 --> 00:03:45.490
+To move around between
+directories, I can use cd.
+
+91
+00:03:45.490 --> 00:03:47.930
+Cd plus the directory
+name will move
+
+92
+00:03:47.930 --> 00:03:50.150
+me into that directory
+from the terminal,
+
+93
+00:03:50.150 --> 00:03:51.470
+and then I could use Ls to list
+
+94
+00:03:51.470 --> 00:03:53.905
+the contents of that
+directory, for instance.
+
+95
+00:03:53.905 --> 00:03:56.390
+Mkdir could make a new directory
+
+96
+00:03:56.390 --> 00:03:58.680
+based on the name
+that you specify.
+
+97
+00:03:58.790 --> 00:04:03.275
+Some other common directory
+in file manipulation,
+
+98
+00:04:03.275 --> 00:04:05.030
+mv is going to move.
+
+99
+00:04:05.030 --> 00:04:08.120
+So you can move files or
+directories to a new location.
+
+100
+00:04:08.120 --> 00:04:10.255
+Cp is going to copy.
+
+101
+00:04:10.255 --> 00:04:12.480
+In the move case,
+you're going to
+
+102
+00:04:12.480 --> 00:04:14.390
+take the file out
+
+103
+00:04:14.390 --> 00:04:16.175
+of one directory, put
+it in another one.
+
+104
+00:04:16.175 --> 00:04:17.930
+In the copy case you're
+going to make a duplicate
+
+105
+00:04:17.930 --> 00:04:20.755
+of the file from one
+location to another.
+
+106
+00:04:20.755 --> 00:04:23.690
+Rm is going to be removing
+either a directory or
+
+107
+00:04:23.690 --> 00:04:26.960
+a file based on the file
+name that you pass.
+
+108
+00:04:26.960 --> 00:04:29.900
+One other common
+utility that you'll
+
+109
+00:04:29.900 --> 00:04:32.680
+use in this course is touch.
+
+110
+00:04:32.680 --> 00:04:35.640
+What touch does is just
+updates a file's timestamp.
+
+111
+00:04:35.640 --> 00:04:39.020
+If the file already exists or
+if the file doesn't exist,
+
+112
+00:04:39.020 --> 00:04:41.120
+it's just going to
+create an empty file
+
+113
+00:04:41.120 --> 00:04:44.780
+and update the timestamp
+to the current timestamp.
+
+114
+00:04:45.170 --> 00:04:47.660
+For all of these commands and
+
+115
+00:04:47.660 --> 00:04:50.090
+every command that you
+deal with on the terminal,
+
+116
+00:04:50.090 --> 00:04:52.835
+there's what are
+called the man pages,
+
+117
+00:04:52.835 --> 00:04:54.890
+that our short for manual pages,
+
+118
+00:04:54.890 --> 00:04:56.570
+you can use to find
+out more details
+
+119
+00:04:56.570 --> 00:04:57.985
+about how to use a command.
+
+120
+00:04:57.985 --> 00:05:01.160
+The cp command that we
+talked about before,
+
+121
+00:05:01.160 --> 00:05:03.260
+if you use man cp
+
+122
+00:05:03.260 --> 00:05:05.165
+to get more information
+about that command,
+
+123
+00:05:05.165 --> 00:05:07.760
+you'll see all the
+different options
+
+124
+00:05:07.760 --> 00:05:09.220
+that you can pass
+to the command.
+
+125
+00:05:09.220 --> 00:05:10.970
+If you read through
+the description,
+
+126
+00:05:10.970 --> 00:05:12.425
+you'll see all the details about
+
+127
+00:05:12.425 --> 00:05:13.880
+the specific options that
+
+128
+00:05:13.880 --> 00:05:17.395
+you can provide and
+what every option does.
+
+129
+00:05:17.395 --> 00:05:23.060
+The man program in the
+manual references here,
+
+130
+00:05:23.060 --> 00:05:25.370
+date back to the original
+Unix Programmer's Manual
+
+131
+00:05:25.370 --> 00:05:26.705
+from 1971.
+
+132
+00:05:26.705 --> 00:05:30.560
+If you look at these numbers
+in parentheses here,
+
+133
+00:05:30.560 --> 00:05:32.840
+these are actual
+referencing chapters
+
+134
+00:05:32.840 --> 00:05:35.000
+of the Unix Programmer's Manual.
+
+135
+00:05:35.000 --> 00:05:38.510
+In this case, Chapter
+1 is talking about cp,
+
+136
+00:05:38.510 --> 00:05:41.570
+and it's all of the user
+commands that you can issue on
+
+137
+00:05:41.570 --> 00:05:46.950
+the terminal for
+Unix-Linux based system.
+
+138
+00:05:46.950 --> 00:05:53.760
+Cp man is also easy
+to search via Google.
+
+139
+00:05:53.760 --> 00:05:55.430
+A lot of times
+rather than going to
+
+140
+00:05:55.430 --> 00:05:57.590
+the terminal and type
+man, whatever I want,
+
+141
+00:05:57.590 --> 00:06:00.380
+I will just type man plus
+
+142
+00:06:00.380 --> 00:06:04.040
+the command name
+directly into Google.
+
+143
+00:06:04.040 --> 00:06:07.430
+You'll pull up sites that
+have man pages online.
+
+144
+00:06:07.430 --> 00:06:10.550
+This is a handy way of
+referencing those and of
+
+145
+00:06:10.550 --> 00:06:14.940
+looking those up
+using your web term.
+
+146
+00:06:15.530 --> 00:06:22.805
+Here's an example of use
+of the cp command and
+
+147
+00:06:22.805 --> 00:06:25.280
+looking for more
+information to use
+
+148
+00:06:25.280 --> 00:06:30.035
+the cp command using
+the man function.
+
+149
+00:06:30.035 --> 00:06:33.270
+In this case, I changed
+
+150
+00:06:33.270 --> 00:06:35.175
+directory into my
+electro 2 directory.
+
+151
+00:06:35.175 --> 00:06:37.580
+Then I make a new directory
+called A directory and I
+
+152
+00:06:37.580 --> 00:06:40.690
+make a sub-directory under
+that called A subdir.
+
+153
+00:06:40.690 --> 00:06:43.520
+Then I'm going to
+make a directory
+
+154
+00:06:43.520 --> 00:06:45.740
+that's going to be the
+target of a copy command,
+
+155
+00:06:45.740 --> 00:06:48.115
+so I make A copy
+target directory.
+
+156
+00:06:48.115 --> 00:06:49.680
+Then I'm going to try to copy
+
+157
+00:06:49.680 --> 00:06:52.145
+A directory to A copy
+target directory,
+
+158
+00:06:52.145 --> 00:06:56.705
+again using the source-destination
+format here for cp.
+
+159
+00:06:56.705 --> 00:07:01.670
+What I'll notice is if
+I run this command,
+
+160
+00:07:01.670 --> 00:07:03.770
+I get an error message
+that comes back that
+
+161
+00:07:03.770 --> 00:07:05.705
+says -r not specified,
+
+162
+00:07:05.705 --> 00:07:07.355
+omitting directory A directory.
+
+163
+00:07:07.355 --> 00:07:08.945
+What it's telling
+me here is that
+
+164
+00:07:08.945 --> 00:07:10.940
+it didn't actually
+copy one directory
+
+165
+00:07:10.940 --> 00:07:12.830
+to my target directory because
+
+166
+00:07:12.830 --> 00:07:14.915
+I didn't specify the -r option.
+
+167
+00:07:14.915 --> 00:07:17.060
+If I go back to the screen
+
+168
+00:07:17.060 --> 00:07:18.770
+I looked at before
+where I typed man
+
+169
+00:07:18.770 --> 00:07:22.680
+cp and a terminal and I pull
+up the man page for cp,
+
+170
+00:07:22.680 --> 00:07:26.910
+one of the things I can look
+for is the -r option for cp.
+
+171
+00:07:26.910 --> 00:07:29.595
+I can see what the
+-r option does.
+
+172
+00:07:29.595 --> 00:07:32.555
+In this case, it's saying
+copy directories recursively.
+
+173
+00:07:32.555 --> 00:07:35.550
+Because I'm trying to
+copy A directory and
+
+174
+00:07:35.550 --> 00:07:38.555
+A subdirectory recursively
+into my copy target,
+
+175
+00:07:38.555 --> 00:07:40.430
+I'm going to need
+to specify cp -r
+
+176
+00:07:40.430 --> 00:07:43.620
+as the error message suggested.
+
+177
+00:07:44.260 --> 00:07:47.845
+To fix this, I could do cp -r
+
+178
+00:07:47.845 --> 00:07:50.310
+and reference the copy directory
+
+179
+00:07:50.310 --> 00:07:52.620
+into the copy target directory.
+
+180
+00:07:52.620 --> 00:07:55.820
+If I install the tree command
+that I mentioned before,
+
+181
+00:07:55.820 --> 00:07:58.910
+so I can visualize the
+directory tree structure.
+
+182
+00:07:58.910 --> 00:08:01.220
+Once I look under the A
+copy target directory,
+
+183
+00:08:01.220 --> 00:08:04.240
+I'll see my A directory
+and A subdirectory.
+
+184
+00:08:04.240 --> 00:08:06.630
+I can see that that structure
+
+185
+00:08:06.630 --> 00:08:08.750
+actually matches the structure
+
+186
+00:08:08.750 --> 00:08:11.430
+that I intended to
+copying with cp.
